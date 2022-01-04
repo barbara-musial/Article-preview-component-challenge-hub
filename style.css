@@ -1,36 +1,87 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap");
 
 body {
+  background-color: hsl(210, 46%, 95%);
   font-family: "Outfit", sans-serif;
-}
-
-.outline {
-  margin: 60px auto;
-  display: grid;
-  width: 700px;
-  grid-template-columns: 300px 400px;
-  grid-template-rows: 1;
-  box-shadow: 0 1px 50px hsla(217, 19%, 35%, 0.138);
-  border-radius: 10px;
-}
-.drawers-image {
-  height: auto;
-  width: 300px;
-  border-radius: 10px 0 0 10px;
 }
 
 h1 {
   font-size: 20px;
   color: hsl(217, 19%, 35%);
-  font-weight: 700;
+  font-weight: 900;
   margin: 0;
 }
+
 p {
-  font-weight: 700;
-  color: hsl(214, 17%, 51%);
   font-size: 13px;
+  color: hsl(214, 17%, 51%);
+  font-weight: 700;
+}
+
+.outline {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 1px 50px hsla(217, 19%, 35%, 0.138);
+
+  display: grid;
+  grid-template-columns: 260px 400px;
+  width: 660px;
+  margin: 60px auto;
+}
+
+.drawers-image {
+  border-radius: 10px 0 0 10px;
+  width: 260px;
+  height: 253px;
+  object-fit: cover;
+  object-position: 0 0;
+  filter: brightness(110%) contrast(90%);
 }
 
 .text {
-  padding: 20px;
+  padding: 30px;
+}
+
+.author {
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+  grid-template-rows: 20px 20px;
+  margin-top: 15px;
+}
+
+.avatar-grid-item {
+  grid-row: 1 / 3;
+}
+.author-image {
+  border-radius: 100px;
+  width: 40px;
+}
+
+.author-name {
+  font-size: 14px;
+  color: hsl(217, 19%, 35%);
+  font-weight: 900;
+  margin-left: 15px;
+}
+
+.publicity-date {
+  font-size: 13px;
+  color: hsl(214, 17%, 51%);
+  font-weight: 500;
+  display: inline-block;
+  grid-row: 2 /3;
+  margin-left: 15px;
+}
+
+.share-grid-item {
+  grid-row: 1 / span 2;
+}
+.share-icon {
+  background-color: hsl(210, 46%, 95%);
+  border-radius: 100px;
+  width: 15px;
+  display: block;
+  height: auto;
+  padding: 9px 8px;
+  margin: 10px auto;
 }
