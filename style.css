@@ -72,7 +72,9 @@ p {
   grid-row: 2 /3;
   margin-left: 15px;
 }
-
+.share-grid-item {
+  position: relative;
+}
 .share-icon {
   background-color: hsl(210, 46%, 95%);
   border-radius: 100px;
@@ -80,6 +82,7 @@ p {
   height: 30px;
   position: relative;
   cursor: pointer;
+  z-index: 2;
 }
 .share-icon-arrow {
   margin: 7.5px auto;
@@ -101,8 +104,8 @@ p {
   font-weight: 900;
 
   position: absolute;
-  right: -77px;
-  top: -55px;
+  right: -68px;
+  top: -50px;
   text-align: center;
   text-transform: uppercase;
   font-stretch: ultra-expanded;
