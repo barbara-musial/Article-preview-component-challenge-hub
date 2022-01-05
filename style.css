@@ -13,7 +13,7 @@ h1 {
 }
 
 p {
-  font-size: 13px;
+  font-size: 14px;
   color: hsl(214, 17%, 51%);
   font-weight: 700;
 }
@@ -26,7 +26,7 @@ p {
   display: grid;
   grid-template-columns: 260px 400px;
   width: 660px;
-  margin: 60px auto;
+  margin: 300px auto;
 }
 
 .drawers-image {
@@ -39,14 +39,14 @@ p {
 }
 
 .text {
-  padding: 30px;
+  padding: 25px;
 }
 
 .author {
   display: grid;
   grid-template-columns: 40px auto 40px;
   grid-template-rows: 20px 20px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .avatar-grid-item {
@@ -95,39 +95,40 @@ p {
 
 .tooltip {
   background-color: hsl(217, 19%, 35%);
-  color: hsl(214, 17%, 51%);
-  width: 200px;
-  height: 35px;
   border-radius: 8px;
+  font-size: 10px;
+  color: hsl(214, 17%, 51%);
+  font-weight: 900;
+
+  position: absolute;
+  right: -77px;
+  top: -55px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 10px;
   font-stretch: ultra-expanded;
-  font-weight: 900;
-  position: absolute;
+  width: 200px;
+  height: 35px;
   z-index: 1;
-  top: -55px;
-  right: -77px;
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 .tooltip img {
-  margin-left: 18px;
   margin-top: 7.5px;
-}
-
-.tooltip-text {
-  display: inline;
-  vertical-align: 7px;
+  margin-left: 18px;
 }
 .tooltip img:last-child {
   margin-right: 0;
 }
 .tooltip::after {
-  content: " ";
   position: absolute;
   top: 100%;
   left: 50%;
+  content: " ";
   border-style: solid;
   border-width: 8px;
   border-color: hsl(217, 19%, 35%) transparent transparent;
+}
+
+.tooltip-text {
+  display: inline;
+  vertical-align: 7px;
 }
